@@ -7,7 +7,7 @@ import { ShoesViewer } from "../components/ShoesViewer";
 import { SourceCodeLink } from "../components/SourceCodeLink";
 
 // Initialize once builder with the apiKey
-builder.init("8bc79977627b4ed09d3e22ba9cdb3107");
+builder.init("63f829e0e7a44824a11461f3037b38ed");
 
 // Register Header component so it's available in the drag-and-drop tool
 Builder.registerComponent(Header, {
@@ -29,47 +29,46 @@ Builder.registerComponent(ShoesViewer, {
   name: "Shoes",
   inputs: [
     {
-      name: 'nuShoes',
-      type: 'number',
-      friendlyName: 'Number of shoes',
+      name: "nuShoes",
+      type: "number",
+      friendlyName: "Number of shoes",
       defaultValue: 100,
     },
     {
-      name: 'ambientLight',
-      type: 'number',
-      friendlyName: 'Ambient light intensity',
+      name: "ambientLight",
+      type: "number",
+      friendlyName: "Ambient light intensity",
       defaultValue: 0.5,
-    }
-  ]
+    },
+  ],
 });
-
 
 // Register ModelView component as dragable component in the builder editor
 Builder.registerComponent(withChildren(SourceCodeLink), {
   name: "SourceCodeLink",
   inputs: [
     {
-      name: 'fileName',
-      type: 'string',
+      name: "fileName",
+      type: "string",
       required: true,
     },
     {
-      name: 'line',
-      type: 'number',
+      name: "line",
+      type: "number",
     },
     {
-      name: 'column',
-      type: 'number',
+      name: "column",
+      type: "number",
     },
   ],
   hideFromInsertMenu: true,
   canHaveChildren: true,
   defaultChildren: [
     {
-      '@type': '@builder.io/sdk:Element',
-      component: { name: 'Text', options: { text: 'Open source code' } }
-    }
-  ]
+      "@type": "@builder.io/sdk:Element",
+      component: { name: "Text", options: { text: "Open source code" } },
+    },
+  ],
 });
 
 export default function MyApp({ Component, pageProps }: AppProps) {
