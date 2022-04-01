@@ -11,18 +11,18 @@
   },
   "dependencies": {
     "@builder.io/react": "^1.1.47",
-    "@react-three/drei": "^7.22.6",
-    "@react-three/fiber": "^7.0.19",
+    "@react-three/drei": "8.11.0",
+    "@react-three/fiber": "7.0.26",
     "@vercel/fetch": "^6.1.0",
     "next": "^12.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "three": "^0.137.0"
+    "three": "0.137.5"
   },
   "devDependencies": {
     "@types/node": "16.11.9",
     "@types/react": "17.0.36",
-    "@types/three": "^0.134.0",
+    "@types/three": "^0.137.0",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
     "prettier": "^2.4.1",
