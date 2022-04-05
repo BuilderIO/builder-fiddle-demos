@@ -74,7 +74,7 @@ Builder.registerComponent(FlexGapExplorer, {
       name: "flexGap",
       type: "number",
       defaultValue: defaultGapSize,
-      helperText: 'Edit this to change the "flex-gap" value',
+      helperText: 'Edit this to change the "gap" value',
     },
     {
       name: "boxes",
