@@ -53,7 +53,7 @@ export function FlexGapExplorer(props: FlexGapExplorerProps) {
         .container {
           display: flex;
           flex-wrap: wrap;
-          flex-gap: ${props.flexGap || defaultGapSize};
+          gap: ${props.flexGap || defaultGapSize};
         }
         `}
       />
