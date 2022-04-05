@@ -18,6 +18,7 @@
     "@react-three/drei": "8.11.0",
     "@react-three/fiber": "7.0.26",
     "@vercel/fetch": "^6.1.0",
+    "dedent": "^0.7.0",
     "next": "^12.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@emotion/babel-plugin": "^11.7.2",
+    "@types/dedent": "^0.7.0",
     "@types/node": "16.11.9",
     "@types/react": "17.0.36",
     "@types/react-syntax-highlighter": "^13.5.2",

@@ -42,17 +42,19 @@ export default function Page({
   page,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const isLive = !Builder.isEditing && !Builder.isPreviewing;
-  if (!page && isLive) {
-    return (
-      <>
-        <Head>
-          <meta name="robots" content="noindex" />
-          <meta name="title"></meta>
-        </Head>
-        <DefaultErrorPage statusCode={404} />
-      </>
-    );
-  }
+  // if (!page && isLive) {
+  //   return (
+  //     <>
+  //       <Head>
+  //         <meta name="robots" content="noindex" />
+  //         <meta name="title"></meta>
+  //       </Head>
+  //       <div>
+  //         <DefaultErrorPage statusCode={404} />
+  //       </div>
+  //     </>
+  //   );
+  // }
 
   return (
     <div>

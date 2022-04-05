@@ -2,11 +2,11 @@ import Assignment from "@mui/icons-material/Assignment";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import { useState } from "react";
-import javascript from "react-syntax-highlighter/dist/esm/languages/hljs/javascript";
-import html from "react-syntax-highlighter/dist/esm/languages/hljs/xml";
-import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/light-async";
-import oneDark from "react-syntax-highlighter/dist/esm/styles/hljs/atom-one-dark";
-import githubGist from "react-syntax-highlighter/dist/esm/styles/hljs/github-gist";
+import javascript from "react-syntax-highlighter/dist/cjs/languages/hljs/javascript";
+import html from "react-syntax-highlighter/dist/cjs/languages/hljs/xml";
+import SyntaxHighlighter from "react-syntax-highlighter/dist/cjs/light-async";
+import oneDark from "react-syntax-highlighter/dist/cjs/styles/hljs/atom-one-dark";
+import githubGist from "react-syntax-highlighter/dist/cjs/styles/hljs/github-gist";
 import { copyToClipboard } from "../functions/copy-to-clipboard";
 
 SyntaxHighlighter.registerLanguage("html", html);
@@ -68,6 +68,7 @@ export function CodeBlockComponent(
     <div
       css={{
         position: "relative",
+        textAlign: "left",
         "&:hover .copy-to-clipboard": {
           display: "block !important",
         },
@@ -107,7 +108,8 @@ export function CodeBlockComponent(
           fontFamily: 'Menlo, Monaco, "Courier New", monospace',
           lineHeight: "1em",
           fontSize: "1.2em",
-          padding: "20px 0",
+          padding: 20,
+          borderRadius: 5,
         }}
         style={dark ? oneDark : githubGist}
         language={language}
