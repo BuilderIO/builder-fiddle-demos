@@ -19,12 +19,11 @@ export function FlexGapExplorer(props: FlexGapExplorerProps) {
     <div css={{ textAlign: "center" }}>
       <h1>Flex Gap Explorer</h1>
       <p>
-        This is a React component to help visualize Flex gaps work. We have
-        connected it to{" "}
+        This is a React component to visualize Flex gap. We have connected it to{" "}
         <GoToLink href="https://www.builder.io/m/developersfiddle-demos.builder.io">
           Builder.io
         </GoToLink>{" "}
-        for visual composing and exploring. View the source of this component{" "}
+        for visual editing. View the source of this component{" "}
         <GoToLink href="https://github.com/BuilderIO/builder-fiddle-demos/blob/main/components/FlexGapExplorer.tsx">
           here
         </GoToLink>
