@@ -38,8 +38,9 @@ export function FlexGapExplorer(props: FlexGapExplorerProps) {
           gap: props.flexGap || defaultGapSize,
         }}
       >
-        {range.map(() => (
+        {range.map((_, index) => (
           <div
+            key={index}
             css={{
               height: 100,
               width: 100,
