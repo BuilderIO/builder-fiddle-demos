@@ -4,6 +4,9 @@ import DefaultErrorPage from "next/error";
 import Head from "next/head";
 import "../components/FlexGapExplorer";
 
+// Initialize once builder with the apiKey
+builder.init("63f829e0e7a44824a11461f3037b38ed");
+
 export async function getStaticProps({
   params,
 }: GetStaticPropsContext<{ page: string[] }>) {
