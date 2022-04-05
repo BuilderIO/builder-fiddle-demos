@@ -1,8 +1,8 @@
 import type { GetStaticPropsContext, InferGetStaticPropsType } from "next";
-import { useRouter } from "next/router";
 import { BuilderComponent, Builder, builder } from "@builder.io/react";
 import DefaultErrorPage from "next/error";
 import Head from "next/head";
+import "../components/FlexGapExplorer";
 
 export async function getStaticProps({
   params,
@@ -34,17 +34,13 @@ export async function getStaticPaths() {
 
   return {
     paths: pages.map((page) => `${page.data?.url}`),
-    fallback: true,
+    fallback: "blocking",
   };
 }
 
 export default function Page({
   page,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const router = useRouter();
-  if (router.isFallback) {
-    return <h1>Loading...</h1>;
-  }
   const isLive = !Builder.isEditing && !Builder.isPreviewing;
   if (!page && isLive) {
     return (
@@ -59,14 +55,11 @@ export default function Page({
   }
 
   return (
-    <>
+    <div>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div>
-
-      </div>
       <BuilderComponent model="page" content={page} />
-    </>
+    </div>
   );
 }
