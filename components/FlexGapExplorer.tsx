@@ -21,8 +21,10 @@ export function FlexGapExplorer(props: FlexGapExplorerProps) {
       <p>
         This is a React component to help visualize Flex gaps work. We have
         connected it to{" "}
-        <GoToLink href="https://www.builder.io">Builder.io</GoToLink> for visual
-        composing and exploring. View the source of this component{" "}
+        <GoToLink href="https://www.builder.io/m/developersfiddle-demos.builder.io">
+          Builder.io
+        </GoToLink>{" "}
+        for visual composing and exploring. View the source of this component{" "}
         <GoToLink href="https://github.com/BuilderIO/builder-fiddle-demos/blob/main/components/FlexGapExplorer.tsx">
           here
         </GoToLink>
@@ -31,6 +33,7 @@ export function FlexGapExplorer(props: FlexGapExplorerProps) {
         css={{
           display: "flex",
           flexWrap: "wrap",
+          marginTop: 10,
         }}
         style={{
           gap: props.flexGap || defaultGapSize,
@@ -46,6 +49,8 @@ export function FlexGapExplorer(props: FlexGapExplorerProps) {
           />
         ))}
       </div>
+      {/* Spacer */}
+      <div css={{ height: 15 }} />
       <CodeBlockComponent
         language="css"
         dark
