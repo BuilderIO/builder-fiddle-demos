@@ -3,6 +3,7 @@ import { BuilderComponent, Builder, builder } from "@builder.io/react";
 import DefaultErrorPage from "next/error";
 import Head from "next/head";
 import "../components/FlexGapExplorer";
+import "../components/BorderImageExplorer";
 
 builder.init("63f829e0e7a44824a11461f3037b38ed");
 
@@ -41,19 +42,19 @@ export default function Page({
   page,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const isLive = !Builder.isEditing && !Builder.isPreviewing;
-  // if (!page && isLive) {
-  //   return (
-  //     <>
-  //       <Head>
-  //         <meta name="robots" content="noindex" />
-  //         <meta name="title"></meta>
-  //       </Head>
-  //       <div>
-  //         <DefaultErrorPage statusCode={404} />
-  //       </div>
-  //     </>
-  //   );
-  // }
+  if (!page && isLive) {
+    return (
+      <>
+        <Head>
+          <meta name="robots" content="noindex" />
+          <meta name="title"></meta>
+        </Head>
+        <div>
+          <DefaultErrorPage statusCode={404} />
+        </div>
+      </>
+    );
+  }
 
   return (
     <div>
