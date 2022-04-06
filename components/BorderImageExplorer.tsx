@@ -11,7 +11,8 @@ interface BorderImageExplorerProps {
   image?: string;
 }
 
-const defaultImage = "";
+const defaultImage =
+  "https://cdn.builder.io/api/v1/image/assets%2F63f829e0e7a44824a11461f3037b38ed%2F5f6b0952ca554ddaaba4d131f91327e4?quality=60&width=800";
 const defaultborderImageWidth = 20;
 const defaultBorderImageSlice = "30";
 const defaultBorderImageRepeat = "stretch";
@@ -49,9 +50,6 @@ export function BorderImageExplorer(props: BorderImageExplorerProps) {
           border-image-repeat: ${
             props.borderImageRepeat ?? defaultBorderImageRepeat
           };
-          border-image-outset: ${
-            props.borderImageOutset ?? defaultBorderImageOutset
-          }px;
         }
         `}
       />
@@ -66,6 +64,9 @@ export function BorderImageExplorer(props: BorderImageExplorerProps) {
       >
         <div
           css={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
             width: 200,
             height: 200,
             borderStyle: "solid",
@@ -80,7 +81,9 @@ export function BorderImageExplorer(props: BorderImageExplorerProps) {
               props.borderImageOutset ?? defaultBorderImageOutset
             }px`,
           }}
-        />
+        >
+          Hello world!
+        </div>
       </div>
     </div>
   );
@@ -117,12 +120,12 @@ Builder.registerComponent(BorderImageExplorer, {
       helperText:
         "https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat",
     },
-    {
-      name: "borderImageOutset",
-      type: "number",
-      defaultValue: defaultBorderImageOutset,
-      helperText:
-        "https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-outset",
-    },
+    // {
+    //   name: "borderImageOutset",
+    //   type: "number",
+    //   defaultValue: defaultBorderImageOutset,
+    //   helperText:
+    //     "https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-outset",
+    // },
   ],
 });
