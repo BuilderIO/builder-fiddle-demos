@@ -20,7 +20,7 @@ const defaultBorderImageOutset = 0;
 
 export function BorderImageExplorer(props: BorderImageExplorerProps) {
   return (
-    <div css={{ textAlign: "center", padding: 20 }}>
+    <div css={{ textAlign: "center" }}>
       <h1>Border Image Explorer</h1>
       <p>
         This is a React component to visualize border images. We have connected
