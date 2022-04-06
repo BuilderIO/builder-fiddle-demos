@@ -27,6 +27,7 @@ export function FlexGapExplorer(props: FlexGapExplorerProps) {
         <GoToLink href="https://github.com/BuilderIO/builder-fiddle-demos/blob/main/components/FlexGapExplorer.tsx">
           here
         </GoToLink>
+        . Scroll down for more info:
       </p>
 
       <CodeBlockComponent
@@ -40,7 +41,7 @@ export function FlexGapExplorer(props: FlexGapExplorerProps) {
         }
         `}
       />
-      
+
       <div
         css={{
           display: "flex",
