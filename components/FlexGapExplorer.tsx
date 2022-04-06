@@ -28,6 +28,19 @@ export function FlexGapExplorer(props: FlexGapExplorerProps) {
           here
         </GoToLink>
       </p>
+
+      <CodeBlockComponent
+        language="css"
+        dark
+        code={dedent`
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: ${props.flexGap || defaultGapSize};
+        }
+        `}
+      />
+      
       <div
         css={{
           display: "flex",
@@ -49,19 +62,6 @@ export function FlexGapExplorer(props: FlexGapExplorerProps) {
           />
         ))}
       </div>
-      {/* Spacer */}
-      <div css={{ height: 15 }} />
-      <CodeBlockComponent
-        language="css"
-        dark
-        code={dedent`
-        .container {
-          display: flex;
-          flex-wrap: wrap;
-          gap: ${props.flexGap || defaultGapSize};
-        }
-        `}
-      />
     </div>
   );
 }
