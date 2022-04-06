@@ -20,7 +20,7 @@ export function FlexGapExplorer(props: FlexGapExplorerProps) {
       <h1>Flex Gap Explorer</h1>
       <p>
         This is a React component to visualize Flex gap. We have connected it to{" "}
-        <GoToLink href="https://www.builder.io/m/developersfiddle-demos.builder.io">
+        <GoToLink href="https://www.builder.io/m/developers">
           Builder.io
         </GoToLink>{" "}
         for visual editing. View the source of this component{" "}
