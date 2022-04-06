@@ -15,7 +15,7 @@ const defaultImage =
   "https://cdn.builder.io/api/v1/image/assets%2F63f829e0e7a44824a11461f3037b38ed%2F5f6b0952ca554ddaaba4d131f91327e4?quality=60&width=800";
 const defaultborderImageWidth = 20;
 const defaultBorderImageSlice = "30";
-const defaultBorderImageRepeat = "stretch";
+const defaultBorderImageRepeat = "repeat";
 const defaultBorderImageOutset = 0;
 
 export function BorderImageExplorer(props: BorderImageExplorerProps) {
