@@ -40,14 +40,12 @@ export function FlexGapExplorer(props: FlexGapExplorerProps) {
         }
         `}
       />
-      
+
       <div
         css={{
           display: "flex",
           flexWrap: "wrap",
           marginTop: 30,
-        }}
-        style={{
           gap: props.flexGap || defaultGapSize,
         }}
       >
