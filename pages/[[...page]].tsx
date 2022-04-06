@@ -4,7 +4,6 @@ import DefaultErrorPage from "next/error";
 import Head from "next/head";
 import "../components/FlexGapExplorer";
 
-// Initialize once builder with the apiKey
 builder.init("63f829e0e7a44824a11461f3037b38ed");
 
 export async function getStaticProps({
@@ -22,9 +21,6 @@ export async function getStaticProps({
     props: {
       page: page || null,
     },
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 5 seconds
     revalidate: 5,
   };
 }
