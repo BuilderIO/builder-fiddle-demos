@@ -16,7 +16,7 @@ const defaultGapSize = 20;
 export function FlexGapExplorer(props: FlexGapExplorerProps) {
   const range = Array(props.boxes || defaultBoxNumber).fill(0);
   return (
-    <div css={{ textAlign: "center" }}>
+    <div css={{ textAlign: "center", padding: 20 }}>
       <h1>Flex Gap Explorer</h1>
       <p>
         This is a React component to visualize Flex gap. We have connected it to{" "}
