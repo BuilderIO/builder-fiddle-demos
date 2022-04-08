@@ -23,12 +23,12 @@ export function BorderImageExplorer(props: BorderImageExplorerProps) {
     <div css={{ textAlign: "center" }}>
       <h1>Border Image Explorer</h1>
       <p>
-        This is a React component to visualize border images. We have connected
-        it to{" "}
+        This is a React component to visualize <code>mix-blend-mode</code> in
+        CSS. We have connected it to{" "}
         <GoToLink href="https://www.builder.io/m/developers">
           Builder.io
         </GoToLink>{" "}
-        for visual editing. View the source of this component{" "}
+        for visual editing. View the full source code of this component{" "}
         <GoToLink href="https://github.com/BuilderIO/builder-fiddle-demos/blob/main/components/BorderImageExplorer.tsx">
           here
         </GoToLink>
