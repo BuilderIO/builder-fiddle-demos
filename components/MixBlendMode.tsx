@@ -41,7 +41,7 @@ export function MixBlendModeExplorer(props: MixBlendModeExplorerProps) {
           Builder.io
         </GoToLink>{" "}
         for visual editing. View the source of this component{" "}
-        <GoToLink href="https://github.com/BuilderIO/builder-fiddle-demos/blob/main/components/MixBlendModeExplorer.tsx">
+        <GoToLink href="https://github.com/BuilderIO/builder-fiddle-demos/blob/main/components/MixBlendMode.tsx">
           here
         </GoToLink>
       </p>
@@ -53,17 +53,17 @@ export function MixBlendModeExplorer(props: MixBlendModeExplorerProps) {
         }}
       >
         <img
-          width="200"
+          width="250"
           height="180"
           css={{
             objectFit: "contain",
             position: "absolute",
-            bottom: -50,
-            left: 48,
+            bottom: -52,
+            left: 28,
             pointerEvents: "none",
             zIndex: 2,
           }}
-          src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fdb423d4cf5da494b9b6c49f94b8fa3b4"
+          src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe96686c464534148961cbed39ec90ea2"
         />
         <CodeBlockComponent
           language="css"
