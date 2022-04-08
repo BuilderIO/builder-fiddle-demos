@@ -58,7 +58,7 @@ SyntaxHighlighter.registerLanguage("graphql", (hljs: any) => ({
 const defaultCopyButtonTooltipText = "Copy code to clipboard";
 
 export function CodeBlockComponent(
-  { language, code, dark }: any /* TODO: types */
+  { language, code, dark, fontSize }: any /* TODO: types */
 ) {
   const [copyButtonTooltipText, setCopyButtonTooltipText] = useState(
     defaultCopyButtonTooltipText
@@ -73,7 +73,7 @@ export function CodeBlockComponent(
           display: "block !important",
         },
         "& code": {
-          fontSize: 14,
+          fontSize: fontSize ?? 14,
         },
       }}
     >

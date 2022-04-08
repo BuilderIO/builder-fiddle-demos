@@ -4,6 +4,7 @@ import DefaultErrorPage from "next/error";
 import Head from "next/head";
 import "../components/FlexGapExplorer";
 import "../components/BorderImageExplorer";
+import "../components/MixBlendMode";
 
 builder.init("63f829e0e7a44824a11461f3037b38ed");
 
